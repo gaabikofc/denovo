@@ -1,0 +1,198 @@
+/* Importa fontes diretamente via @import */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBE9E7; /* fundo bege claro vintage */
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilo dos containers retrô */
+.container {
+    background-color: #3E2723; /* marrom escuro retrô */
+    border-radius: 12px;
+    padding: 70px;
+    margin-bottom: 10px;
+    color: #FFEBEE; /* off-white rosado */
+    box-shadow: 1px 10px 18px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 10px 18px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 10px 18px 0px rgba(0,0,0,0.75);
+}
+
+/* Título principal estilo neon retrô */
+.titulo {
+    font-family: 'Monoton', cursive;
+    font-size: 32px;
+    color: #FF7043; /* laranja queimado */
+    text-shadow: 2px 2px #000;
+}
+
+/* Subtítulo com estilo suave */
+.subtitulo {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #FFD180; /* amarelo claro vintage */
+}
+
+/* Títulos dos containers subsequentes */
+.container-titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFCA28; /* amarelo mostarda */
+}
+
+/* Lista da programação */
+.programacao {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Texto geral */
+.texto {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botão retrô */
+.botao {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px #3E2723;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #D84315;
+}
+
+/* Container de notícias com carrossel */
+.noticias-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    display: none;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #FF7043;
+}
+
+.carousel-text {
+    flex: 1;
+}
+
+.carousel-text h3 {
+    font-size: 20px;
+    color: #FFCA28;
+    margin-bottom: 8px;
+}
+
+.carousel-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botões de navegação */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px #3E2723;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #D84315;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.container-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.video-player {
+    flex: 1 1 40%;
+    aspect-ratio: 16 / 9;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.programacao-texto {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    /* .video-player {
+      display: none;
+    } */
+
+    .carousel-btn {
+        display: none;
+      }
+
+      audio {
+        width: 100%; /* opcional: ocupa largura total da tela */
+        max-width: 300px; /* controla o tamanho máximo */
+      }
+  }
+  

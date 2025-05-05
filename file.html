@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Made in 019</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Seja Bem-Vindo à Rádio Made In 019</h1>
+        <p class="subtitulo">A melhor do DDD 019</p>
+        <!-- </div> -->
+        <br>
+        <div class="container-conteudo">
+            <!-- Player que será alterado dinamicamente -->
+            <div id="player-container" class="video-player"></div>
+            <div class="programacao-texto">
+                <h2 class="container-titulo">Programação de Hoje</h2>
+                <ul class="programacao">
+                    <li><strong>08h - 10h:</strong> Clássicos do Vinil</li>
+                    <li><strong>10h - 12h:</strong> Hora do Flashback</li>
+                    <li><strong>12h - 14h:</strong> Entrevista com o Artista</li>
+                    <li><strong>14h - 16h:</strong> Prévias do Álbum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="container-titulo">Ouça Agora</h2>
+        <p class="texto"> <a href="instagram.com" style="color: #FF5733;"> Clique abaixo </a> para ouvir um trecho exclusivo do álbum:</p>
+        <br>
+        <audio controls>
+            <source src="QUEDA.wav" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2 class="container-titulo">Sobre a Rádio</h2>
+        <p class="texto">
+            A Rádio Made In 019 é a estação mais quente da sua timeline. Sintonize o futuro com som do passado. Criada para dar vida ao lançamento do novo álbum com um clima 100% nostálgico.
+        </p>
+    </div>
+    <div class="container noticias-container">
+        <h2 class="container-titulo">Últimas Notícias</h2>
+        <div class="carousel">
+            <!-- Notícia 1 -->
+            <div class="carousel-item active">
+                <img src="revista da folha deluxe v2.png" alt="Notícia 1" class="carousel-img">
+                <div class="carousel-text">
+                    <h3>Álbum estreia em grande estilo</h3>
+                    <p>O novo álbum lançado via Rádio Made In 019 já está bombando nas playlists retrô. Uma viagem sonora imperdível!</p>
+                </div>
+            </div>
+            <!-- Notícia 2 -->
+            <div class="carousel-item">
+                <img src="entrevista mick jagger.jpg" alt="Notícia 2" class="carousel-img">
+                <div class="carousel-text">
+                    <h3>Entrevista com o Artista</h3>
+                    <p>Em uma conversa exclusiva, o artista fala sobre as influências vintage e o processo de criação do novo álbum.</p>
+                </div>
+            </div>
+            <!-- Notícia 3 -->
+            <div class="carousel-item">
+                <img src="fas enlouquecidos.jpg" alt="Notícia 3" class="carousel-img">
+                <div class="carousel-text">
+                    <h3>Back to the Vinyl</h3>
+                    <p>Fãs comemoram o retorno do vinil com uma edição especial do álbum. É nostalgia em alta rotação!</p>
+                </div>
+            </div>
+            <!-- Navegação -->
+            <button class="carousel-btn prev" onclick="trocarNoticia(-1)">←</button>
+            <button class="carousel-btn next" onclick="trocarNoticia(1)">→</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="container-titulo">Rodapé</h2>
+        <p class="texto">
+            © Made in 019 - Todos os direitos reservados.
+        </p>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
